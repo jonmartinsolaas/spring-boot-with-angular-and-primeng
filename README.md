@@ -1,7 +1,7 @@
 # Howto use Angular4 and PrimeNG in a Spring Boot app.
 
-This repo doesn't contain any code, just a description on how to get stuff up and running, pulled 
-togehter from other resources on the web.
+This repo doesn't contain any code, just a description on how to initially get stuff up and running, pulled 
+together from other resources on the web. 
 
 ## Install Angular if needed
 
@@ -13,18 +13,19 @@ means install globally. You can skip it and install locally in your user as well
 npm install -g @angular/cli
 ```
 
-##Create a Spring Boot project:
+## Create a Spring Boot project
 
 ```
 spring init --dependencies=web [name of the app]
 ```
 You can also include jax-rs, jpa, postgresql etc.
 
-## First initialize Angular with Angular-cli
+## Initialize Angular with angular-cli
 
 https://angular.io/docs/ts/latest/cli-quickstart.html
 
-Initialize Angular with angular-cli. Run from same folder as spring init.
+Initialize Angular with angular-cli. Run from same folder as spring init, eg. above the folder
+with the application name that spring made.
 
 ```
 ng new [name of the app]
@@ -32,14 +33,14 @@ ng new [name of the app]
 Angular-cli will create stuff within the existing src folder and so on.
 You will be asked if you want to overwrite ```.gitignore``` which is probably
 a good idea, if you are accustomed to java .gitignores and can recreate
-what spring boot put there initially. Otherwise take a backup of .gitignore
+what Spring Boot put there initially. Otherwise take a backup of ```.gitignore```
 first and then merge the two files.
 
 ## Add PrimeNG
 
 http://blogs.bytecode.com.au/glen/2016/10/27/primeng-with-angular-cli.html
 
-Install PrimeNG and FontAwesome:
+Install PrimeNG and FontAwesome within the application folder:
 
 ```
 cd [name of the app]
@@ -78,7 +79,7 @@ ng serve --open
 ```
 
 ## Add a button with click-listener
-### Fixing ```app.module.ts``` (in ```src/app```)
+### Import ```ButtonModule``` in  ```app.module.ts``` (in ```src/app```)
 We want to import a PrimeNG Button. This happens in ``app.module.ts``. Initially this looks like
 
 ```typescript
@@ -105,7 +106,7 @@ export class AppModule { }
 
 ```
 
-We will first have to 
+We will have to 
 
 1. Add an ```import`` statement for ```ButtonModule```.
 1. Add the imported PrimeNG module to the ```imports:``` list.
@@ -154,7 +155,7 @@ After adding the button it should look somewhat like this (only the last line is
 
 After addomg the ```buttClick()``` method it should look like this:
 
-```
+```typescript
 import { Component } from '@angular/core';
 
 @Component({
