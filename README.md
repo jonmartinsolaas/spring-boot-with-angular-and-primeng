@@ -23,10 +23,10 @@ You can also include jax-rs, jpa, postgresql etc.
 
 https://angular.io/docs/ts/latest/cli-quickstart.html
 
-```cd``` into the project directory and run:
+Initialize Angular with angular-cli. Run from same folder as spring init.
 
 ```
-ng init
+ng new [name of the app]
 ```
 
 Angular-cli will create stuff within the existing src folder and so on.
