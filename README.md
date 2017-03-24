@@ -153,7 +153,7 @@ After adding the button it should look somewhat like this (only the last line is
 
 ### Adding click handler in ```app.component.ts```
 
-After addomg the ```buttClick()``` method it should look like this:
+After addimg the ```buttClick()``` method it should look like this:
 
 ```typescript
 import { Component } from '@angular/core';
