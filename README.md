@@ -55,9 +55,9 @@ Add the PrimeNG and font-awesome stylesheets (three lines) into ```.angular-cli.
       ],
 ```
 
-Here you can change themes (replace ```omega`)!
+Here you can change themes (replace ```omega```)!
 
-Add dependencies into ```package.json```:
+Dependencies have been added into ```package.json``` for you:
 
 ```json
   "dependencies": {
@@ -75,7 +75,7 @@ ng serve --open
 ```
 
 ## Add a button with click-listener
-### Fixing ```app.module.ts```
+### Fixing ```app.module.ts``` (in ```src/app```)
 We want to import a PrimeNG Button. This happens in ``app.module.ts``. Initially this looks like
 
 ```typescript
@@ -213,8 +213,11 @@ We must change ```outDir``` to ```src/main/resources/static``` so that it looks 
 
 This makes Spring webserver able to serve the stuff. First we need to build (happens automatically with ```ng serve```):
 
-```ng build```
-Make sure ```pom.xml``` contains
+```
+ng build
+```
+
+Also make sure ```pom.xml``` contains
 
 ```
 		<dependency>
