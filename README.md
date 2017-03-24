@@ -1,5 +1,7 @@
 # Howto use Angular4 and PrimeNG in a Spring Boot app.
 
+This repo doesn't contain any code, just a description on how to get stuff up and running.
+
 ## Install Angular if needed
 
 Install Angular (currently version 4). You may have to run this as root or
