@@ -31,7 +31,9 @@ ng new [name of the app]
 ```
 Angular-cli will create stuff within the existing src folder and so on.
 You will be asked if you want to overwrite ```.gitignore``` which is probably
-a good idea, if you are accustomed to java .gitignores.
+a good idea, if you are accustomed to java .gitignores and can recreate
+what spring boot put there initially. Otherwise take a backup of .gitignore
+first and then merge the two files.
 
 ## Add PrimeNG
 
