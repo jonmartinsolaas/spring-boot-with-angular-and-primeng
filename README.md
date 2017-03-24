@@ -234,6 +234,12 @@ And run with Spring Boot:
 
 ```mvn spring-boot:run```
 
+## More resources
+
+https://blog.jdriven.com/2016/12/angular2-spring-boot-getting-started/
+
+See step 4. for frontend-maven-plugin and further.
+
 ## Maven plugin
 
 TODO ...
