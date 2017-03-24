@@ -28,8 +28,9 @@ Initialize Angular with angular-cli. Run from same folder as spring init.
 ```
 ng new [name of the app]
 ```
-
 Angular-cli will create stuff within the existing src folder and so on.
+You will be asked if you want to overwrite ```.gitignore``` which is probably
+a good idea, if you are accustomed to java .gitignores.
 
 ## Add PrimeNG
 
@@ -38,11 +39,12 @@ http://blogs.bytecode.com.au/glen/2016/10/27/primeng-with-angular-cli.html
 Install PrimeNG and FontAwesome:
 
 ```
+cd [name of the app]
 npm install primeng --save
 npm install font-awesome --save
 ```
 
-Add stylesheets into ```.angular-cli.json```, it should look like this:
+Add the PrimeNG and font-awesome stylesheets (three lines) into ```.angular-cli.json```, it should look like this after editing:
 
 ```json
       "styles": [
@@ -53,7 +55,7 @@ Add stylesheets into ```.angular-cli.json```, it should look like this:
       ],
 ```
 
-Here you can change themes!
+Here you can change themes (replace ```omega`)!
 
 Add dependencies into ```package.json```:
 
