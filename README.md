@@ -108,7 +108,7 @@ export class AppModule { }
 
 We will have to 
 
-1. Add an ```import`` statement for ```ButtonModule```.
+1. Add an ```import``` statement for ```ButtonModule```.
 1. Add the imported PrimeNG module to the ```imports:``` list.
 
 The file should then look like:
